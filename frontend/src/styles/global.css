@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --red: #9D0506;
+  --green: #008000;
+  --dark: #0D1117;
+  --black: #000000;
+  --white: #FFFFFF;
+  --light: #E9E9E9;
+}
+
+::selection {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--white);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
